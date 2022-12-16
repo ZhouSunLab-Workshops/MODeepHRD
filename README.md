@@ -1,5 +1,13 @@
 # MODeepHRD
-Prediction of homologous recombination and repair defects based on omics data
+Homologous recombination repair (HRR) is a DNA repair mechanism in which damaged DNA fragments are repaired by reference sequences that are similar to other sequences. This repair mechanism plays an important role in cells because it helps cells repair DNA damage caused by external factors such as free radicals and UV radiation.
+
+However, when HRR is defective, cells may be unable to repair DNA damage, which can lead to cancer. Therefore, predicting HRR deficiency may have important implications for early diagnosis and treatment of cancer.
+
+In the past few years, deep learning (deep learning) has achieved great success in the field of medicine and has played an important role in cancer diagnosis and prediction. Therefore, many researchers try to predict HRR deficits using deep learning.
+
+For example, studies have used deep learning algorithms to analyze genomic data to predict the presence of HRR defects in cancer cells. These studies demonstrate that deep learning can effectively predict HRR deficits with high accuracy.
+
+The following are the basic applications and operations of our proposed MODeepHRD.
 ## Requirements
 You need to use requirements and download the environment with the same parameters as our library
 `pip install -r requirements.txt`
@@ -29,7 +37,7 @@ If you want to get the Methylation or Expression by Generator please run `./data
     df = df.fillna(df.mean(axis=1))
 </code></pre>
 ## Module Zoo
-We provide the .pth file of the optimal model for each module at Baidu pan.
+We provide the .pth file of the optimal model for each module at [Baidu pan]()..
 ## Inference
 Through the `main.py`, you can start using the modules of MODeepHRD to realize the diagnosis of homologous recombination repair defects in cancer.
 Please follow these steps before using in your own dataset. Or use the sample we provided for demonstration.  
@@ -39,6 +47,7 @@ Please follow these steps before using in your own dataset. Or use the sample we
 + Setting GAN at `--augmentation`.  
 + Run `main.py`.  
 When the inference is completed, the results will be stored in `Save_Param`.
-
+## Acknowledgments
++ The implementation of baseline Convolutional Attention Mechanism was based on [timm]([https://github.com/rwightman/pytorch-image-models#introduction](https://github.com/bruinxiong/Modified-CBAMnet.mxnet)). 
 
 
