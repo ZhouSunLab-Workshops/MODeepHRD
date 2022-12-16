@@ -1,11 +1,5 @@
 # MODeepHRD
-Homologous recombination repair (HRR) is a DNA repair mechanism in which damaged DNA fragments are repaired by reference sequences that are similar to other sequences. This repair mechanism plays an important role in cells because it helps cells repair DNA damage caused by external factors such as free radicals and UV radiation.
-
-However, when HRR is defective, cells may be unable to repair DNA damage, which can lead to cancer. Therefore, predicting HRR deficiency may have important implications for early diagnosis and treatment of cancer.
-
-In the past few years, deep learning (deep learning) has achieved great success in the field of medicine and has played an important role in cancer diagnosis and prediction. Therefore, many researchers try to predict HRR deficits using deep learning.
-
-For example, studies have used deep learning algorithms to analyze genomic data to predict the presence of HRR defects in cancer cells. These studies demonstrate that deep learning can effectively predict HRR deficits with high accuracy.
+Homologous recombination deficiency (HRD) is a well-recognized important biomarker in the clinical benefits of platinum-based chemotherapy and PARP inhibitor (PARPi) therapy for patients diagnosed with gynecologic cancers. Accurate prediction of HRD phenotype and simultaneous development of new strategies is still unmet needs and remains challenging. Here, we proposed a novel Multi-Omics integrative Deep-learning framework named MODeepHRD for HRD-positive phenotype detection. The MODeepHRD utilized a convolutional attention autoencoder that can leverage omics-specific and cross-omics complementary knowledge learning. 
 
 The following are the basic applications and operations of our proposed MODeepHRD.
 ## Requirements
