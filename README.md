@@ -37,7 +37,7 @@ If you want to get the Methylation or Expression by Generator please run `./data
     df = df.fillna(df.mean(axis=1))
 </code></pre>
 ## Module Zoo
-We provide the .pth file of the optimal model for each module at [Baidu pan]()..
+We provide the .pth file of the optimal model for each module at [Baidu pan:rbdi](https://pan.baidu.com/s/13ptviFu43AEl8t3JJGMSrA?pwd=rbdi)
 ## Inference
 Through the `main.py`, you can start using the modules of MODeepHRD to realize the diagnosis of homologous recombination repair defects in cancer.
 Please follow these steps before using in your own dataset. Or use the sample we provided for demonstration.  
