@@ -2,7 +2,7 @@
 Prediction of homologous recombination and repair defects based on omics data
 ## Requirements
 You need to use requirements and download the environment with the same parameters as our library
-pip install -r packages.txt
+`pip install -r requirements.txt`
 
 ## Data processing
 The unified format of our dataset is as follows:
@@ -17,6 +17,8 @@ The unified format of our dataset is as follows:
 ### Mutation：
     1.Download the somatic mutation files from TCGA,and construct mutation matrix.
     2.Select the genes of all mutation types as the features of the matrix, if the gene mutation in the patient is recorded as 1, otherwise it is recorded as 0.
+### Data augmentation
+If you want to get the Methylation or Expression by Generator please run `./datasets/augmentation.py`.
 ### key code
 <pre><code> 
     #Remove columns with missing values greater than 20%
@@ -26,5 +28,17 @@ The unified format of our dataset is as follows:
     #Replace missing values with row mean
     df = df.fillna(df.mean(axis=1))
 </code></pre>
+## Module Zoo
+We provide the .pth file of the optimal model for each module at Baidu pan.
+## Inference
+Through the `main.py`, you can start using the modules of MODeepHRD to realize the diagnosis of homologous recombination repair defects in cancer.
+Please follow these steps before using in your own dataset. Or use the sample we provided for demonstration.  
++ Setting work mode at `--model`.  
++ Setting datas sample path at `--sample`.  
++ Setting Model parameters at `--config`.  
++ Setting GAN at `--augmentation`.  
++ Run `main.py`.  
+When the inference is completed, the results will be stored in `Save_Param`.
+
 
 
