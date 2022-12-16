@@ -19,9 +19,12 @@ The unified format of our dataset is as follows:
     2.Select the genes of all mutation types as the features of the matrix, if the gene mutation in the patient is recorded as 1, otherwise it is recorded as 0.
 ### key code
 <code> 
-    df = df.dropna(axis=1, thresh=len(df) * 0.8)#Remove columns with missing values greater than 20%
-    df = df.dropna(axis=0, thresh=len(df.columns) * 0.8)#Remove rows with missing values greater than 20%
-    df = df.fillna(df.mean(axis=1))#Replace missing values with row mean
-   <code>
+    #Remove columns with missing values greater than 20%
+    df = df.dropna(axis=1, thresh=len(df) * 0.8)
+    #Remove rows with missing values greater than 20%
+    df = df.dropna(axis=0, thresh=len(df.columns) * 0.8)
+    #Replace missing values with row mean
+    df = df.fillna(df.mean(axis=1))
+</code>
 
 
