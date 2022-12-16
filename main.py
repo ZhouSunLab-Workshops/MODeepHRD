@@ -41,8 +41,8 @@ if __name__ == "__main__":
     ##The final output of the three neural networks is consistent before the operation can be performed
     Out_Feature_size = int(args.Out_Feature_size.split('*')[0])*int(args.Out_Feature_size.split('*')[1])*int(args.Out_Feature_size.split('*')[2])
     ##Read HR files
-    HR_DLabel = pd.read_table("../数据/2022_03_01数据/TCGA_OV/Methylaion/Met_Label.csv", sep=',')
-    HR_Files = pd.read_csv("../数据/2022_03_01数据/TCGA_OV/Methylaion/Met_Data.csv",sep=',')
+    HR_DLabel = pd.read_table(args.label_path, sep=',')
+    HR_Files = pd.read_csv(args.data_path,sep=',')
     HR_Files.iloc[:, 1:] = min_max_scaler.fit_transform(std.fit_transform(np.array(HR_Files.iloc[:, 1:], dtype=np.float32)))
     ##Tenfold crossover
     Index_HR=np.arange(HR_DLabel.shape[0])
