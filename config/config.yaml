@@ -1,0 +1,16 @@
+# Main
+seed: 2022
+workers: 0
+out_dir: "./Save_Param"
+initial_checkpoint: 'None'
+num_fold: 10
+Out_Feature_size: 3*16*16
+lambda1 : 0.0001
+label_path: "../数据/2022_03_01数据/TCGA_OV/Expression/Exp_Label.csv"
+data_path: "../数据/2022_03_01数据/TCGA_OV/Expression/Exp_Data.csv"
+start_lr: 1e-3
+N: 7
+Epoch: 500
+# train options
+batch_size: 1
+start_epoch: 0
