@@ -48,6 +48,6 @@ Please follow these steps before using in your own dataset. Or use the sample we
 + Run `main.py`.  
 When the inference is completed, the results will be stored in `Save_Param`.
 ## Acknowledgments
-+ The implementation of baseline Convolutional Attention Mechanism was based on [timm]([https://github.com/rwightman/pytorch-image-models#introduction](https://github.com/bruinxiong/Modified-CBAMnet.mxnet)). 
++ The implementation of baseline Convolutional Attention Mechanism was based on [cbam](https://github.com/Jongchan/attention-module)
 
 
