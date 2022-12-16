@@ -25,7 +25,7 @@ The unified format of our dataset is as follows:
 ### Mutation：
     1.Download the somatic mutation files from TCGA,and construct mutation matrix.
     2.Select the genes of all mutation types as the features of the matrix, if the gene mutation in the patient is recorded as 1, otherwise it is recorded as 0.
-### Data augmentation
+### Data augmentation：
 If you want to get the Methylation or Expression by Generator please run `./datasets/augmentation.py`.
 ### key code
 <pre><code> 
