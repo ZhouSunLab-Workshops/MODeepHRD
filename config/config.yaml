@@ -6,8 +6,8 @@ initial_checkpoint: 'None'
 num_fold: 10
 Out_Feature_size: 3*16*16
 lambda1 : 0.0001
-label_path: "../数据/2022_03_01数据/TCGA_OV/Expression/Exp_Label.csv"
-data_path: "../数据/2022_03_01数据/TCGA_OV/Expression/Exp_Data.csv"
+label_path: "Exp_Label.csv"
+data_path: "Exp_Data.csv"
 start_lr: 1e-3
 N: 7
 Epoch: 500
